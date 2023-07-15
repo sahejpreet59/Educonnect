@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .author {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body> <div class="banner"> 
+    <div class="navbar">
+    <img src="Edconnect logo.ai" class="logo">
+    <ul>
+        <li><a href="#">optional</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">SignUp</a></li>
+        <li><a href="Login.html">Login</a></li>
+    </ul></div>
+  <div class="container">
+    <h1>Article Title</h1>
+    <p>Published on <span id="date"></span></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae facilisis dui. Donec hendrerit metus sed metus convallis consequat. Nulla facilisi. Nam consectetur fermentum ligula, ut condimentum ex finibus eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla interdum, tellus at iaculis mollis, velit justo efficitur nisi, sed efficitur enim ipsum vitae dui. Cras sed feugiat arcu.</p>
+    <p>Quisque id lectus eu urna dapibus congue. Curabitur suscipit volutpat ante non gravida. Maecenas dignissim ante eget consectetur faucibus. Fusce vehicula odio id dapibus tincidunt. Praesent porttitor congue rutrum. Donec fringilla, dui in feugiat facilisis, tellus nisl faucibus enim, id faucibus neque nunc id elit.</p>
+    <p class="author">Written by John Doe</p>
+  </div>
+
+  <script>
+    const dateElement = document.getElementById('date');
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = currentDate.toLocaleDateString('en-US', options);
+  </script>
+</body>
+</html>
